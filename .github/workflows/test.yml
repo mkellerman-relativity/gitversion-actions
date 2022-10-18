@@ -8,13 +8,13 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest, macos-latest]
+        os: [ubuntu-latest] #[windows-latest, ubuntu-latest, macos-latest]
       fail-fast: false
     steps:
     - uses: actions/checkout@v2
-    - name: Fetch all history for all tags and branches
-      run: |
-        git fetch --prune --unshallow
+    # - name: Fetch all history for all tags and branches
+    #   run: |
+    #     git fetch --prune --unshallow
     - name: Install GitVersion
       uses: gittools/actions/gitversion/setup@v0.9.14
       with:
