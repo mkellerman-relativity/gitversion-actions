@@ -27,3 +27,4 @@ Examples for usage of **GitReleaseManager**:
 
 - [GitHub Actions](docs/examples/github/gitreleasemanager/index.md)
 - [Azure Pipelines tasks](docs/examples/azure/gitreleasemanager/index.md)
+ 
